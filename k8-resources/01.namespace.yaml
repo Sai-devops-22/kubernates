@@ -1,0 +1,7 @@
+apiVersion: v1             # Tells Kubernetes which version of the API to use
+kind: Namespace            # Tells Kubernetes that we want to create a Namespace
+metadata:                  # Info about this namespace
+  name: roboshop           # The name of the namespace = "roboshop"
+  labels:                  # Extra tags (labels) to describe it
+    project: roboshop      # A label: project is roboshop
+    environment: dev       # Another label: environment is dev (means this is for development)
