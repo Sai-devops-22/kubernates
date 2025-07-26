@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: resource-limit
+  labels:
+    file: limit
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    resources:
+      requests: 
+        memory: "68M"
+        cpu: "100m"
+  - name: almalinux
+    image: almalinux:9
+    resources:
+      requests:
+        memory: "11M"
+        cpu: "100m"
+          
