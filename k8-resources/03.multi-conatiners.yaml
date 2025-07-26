@@ -1,5 +1,5 @@
 apiVersion: v1
-kind: multi=container
+kind: multi-container
 metadata:
   name: nginx
   labels:
