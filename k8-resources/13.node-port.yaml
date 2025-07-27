@@ -2,7 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: node-port
-  label: demo
+  labels: 
+    purpose: demo
 spec:
   type: NodePort
   selector:
@@ -17,7 +18,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: node-port1'
+  name: node-port'
   labels:
     trainer: siva
     course: devsecops
