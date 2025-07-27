@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata: 
-  - name: albnode
+  name: albnode
 spec:
   type: LoadBalncer
   selector:
