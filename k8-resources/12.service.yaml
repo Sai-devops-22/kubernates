@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service
+  labels:
+    purpose: dome 
+spec:
+  selectors:
+    trainer: siva
+    course: devsecops
+    durations: 120hrs
+  ports:
+    - protocol: TCP
+      port: 80 # service port
+      targetPort: 80 # container port
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: servicecheck
+  labels:
+    trainer: siva
+    course: devsecops
+    durations: 120hrs
+spec:
+  containers:
+    name: nginx
+    image: nginx
+
+
+
+
+
