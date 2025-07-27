@@ -3,7 +3,7 @@ kind: Service
 metadata: 
   name: albnode
 spec:
-  type: LoadBalncer
+  type: LoadBalancer
   selector:
     trainer: siva
     course: devsecops
