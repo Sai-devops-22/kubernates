@@ -18,7 +18,7 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: node-port'
+  name: node-port
   labels:
     trainer: siva
     course: devsecops
