@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  - name: albnode
+spec:
+  type: LoadBalncer
+  selector:
+    trainer: siva
+    course: devsecops
+    durations: 120hr
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: podlb
+  labels:
+    trainer: siva
+    course: devsecops
+    durations: 120hr 
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+     
+    
