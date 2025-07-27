@@ -5,7 +5,7 @@ metadata:
   labels:
     purpose: dome 
 spec:
-  selectors:
+  selector:
     trainer: siva
     course: devsecops
     durations: 120hrs
