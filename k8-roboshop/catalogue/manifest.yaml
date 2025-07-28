@@ -37,7 +37,7 @@ spec:
     spec:
       containers:
       - name: catalogue
-        image: saidoc11/catalogue
+        image: saidoc11/catalogue:v1
         envFrom:
         - configMapRef:
             name: catalogue
