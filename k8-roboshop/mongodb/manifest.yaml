@@ -16,7 +16,6 @@ spec:
       tier: database
   template:
     metadata: 
-      name: mongodb
       labels:
         component: mongodb
         project: roboshop
@@ -47,5 +46,22 @@ spec:
 
 
 
-
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: roboshop
+  name: mongodb
+  labels:
+    component: mongodb
+    project: roboshop
+    tier: database
+spec:
+  selector:
+    component: mongodb
+    project: roboshop
+    tier: database
+  ports:
+    - protocol: TCP
+      port: 27017
+      targetPort: 27017
 
