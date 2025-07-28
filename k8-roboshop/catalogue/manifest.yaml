@@ -19,7 +19,7 @@ metadata:
   labels:
     component: catalogue
     project: roboshop
-    tier: database
+    tier: app
 spec:
   replicas: 1
   selector:
@@ -27,13 +27,13 @@ spec:
       labels: 
         component: catalogue
         project: roboshop
-        tier: database
+        tier: app
   template:
     metadata:
       labels:
         component: catalogue
         project: roboshop
-        tier: database
+        tier: app
     spec:
       containers:
         - name: catalogue
