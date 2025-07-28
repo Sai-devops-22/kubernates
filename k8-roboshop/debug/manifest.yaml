@@ -9,5 +9,5 @@ metadata:
 spec:
   containers:
     - name: debug
-      image: saidoc11/debug
+      image: saidoc11/debug:v1
       command: [ "sleep", "1000" ]
