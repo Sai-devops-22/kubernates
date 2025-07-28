@@ -24,7 +24,6 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      labels: 
         component: catalogue
         project: roboshop
         tier: app
