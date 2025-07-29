@@ -37,7 +37,7 @@ spec:
       spec:
         containers:
           - name: mysql
-            image: saidoc11/mysql
+            image: saidoc11/mysql:v1
             envFrom:
               - secretRef:
                   name: mysql
