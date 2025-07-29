@@ -44,8 +44,8 @@ spec:
 apiVersion: v1
 kind: Service
 metadata: 
-  namespace: roboshop
   name: mysql
+  namespace: roboshop
 spec:
   selector:
       component: mysql
