@@ -48,7 +48,6 @@ metadata:
   name: mysql
 spec:
   selector:
-    labels:
       component: mysql
       project: roboshop
       tier: database
